@@ -49,7 +49,7 @@ class Dao {
 
   public function getJoueurs($equipe) {
     try {
-            $query = $this->connexion->query("SELECT licence, nom, prenom, telephone, mail, photo, role, equipe FROM adherents, equipes WHERE equipe = '".$equipe."' and id = '".$equipe."'");
+      $query = $this->connexion->query("SELECT licence, nom, prenom, telephone, mail, photo, role, equipe FROM adherents, equipes WHERE equipe = '".$equipe."' and id = '".$equipe."'");
       $ret = array();
       foreach ($query as $row) {
         $ret[] = new Adherent($row['licence'], $row['nom'], $row['prenom'], $row['telephone'], $row['mail'], $row['photo'], $row['role'], $row['equipe']);
@@ -91,7 +91,19 @@ class Dao {
 // Matchs
 
   public function getMatchs() {
-
+    try {
+      $this->connexion();
+      $query = $this->connexion->query("SELECT * FROM matchs");
+      $ret = array();
+      foreach ($query as $row) {
+        $ret[] = new Match($row['id'], $row['date'], $row['categorie'], $row['equipe'], $row['adversaire']);
+      }
+      $this->deconnexion();
+    }
+    catch (PDOException $e) {
+      throw new AccesTableException();
+    }
+    return $ret;
   }
 
 }

@@ -1,4 +1,8 @@
 <?php
+	require_once("php/Database/Dao.php");
+	require_once("php/Database/Adherent.php");
+	require_once("php/Database/Match.php");
+	require_once("php/Database/Equipe.php");
 	session_start();
 ?>
 <!doctype html>
@@ -134,6 +138,16 @@
 			</script>
 
 			<h3>Résultats du week-end :</h3>
+			<?php 
+				$dao = new Dao("localhost", "vertou_basket_bdd", "root", "");
+				$matchs = $dao->getMatchs();
+				foreach ($matchs as $row) {
+					echo ("
+						<h5>".$row->getCategorie()."</h5>
+						<h6>".$row->getEquipe()." - ".$row->getAdversaire()."</h6>
+					");
+				}
+			?>
 			
 			<footer>
 		        	<div class="col-xs-3 col-sm-3 col-md-3">
