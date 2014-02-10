@@ -132,6 +132,8 @@
 			    });
 			});  
 			</script>
+
+			<h3>Résultats du week-end :</h3>
 			
 			<footer>
 		        	<div class="col-xs-3 col-sm-3 col-md-3">
