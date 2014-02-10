@@ -11,16 +11,8 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		function onload() {
-			if (<?php echo (isset($_GET['fail'])); ?>) {
-				alert("Le login ou le mot de passe est incorrect !");
-			}
-		}
-	</script>
 
-
-	<title>Le Club - Vertou Basket</title>
+	<title>Mises à Jour - Vertou Basket</title>
 </head>
 <body onload="onload();">
 	<script type="text/javascript">
@@ -28,7 +20,7 @@
 			$(".dropdown-toggle").dropdown();
 		});  
 	</script>
-
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1"></div>
@@ -74,36 +66,32 @@
 							?>
 						</div>
 					</header>
-			
+		
 					<div class="navbar navbar-inverse" role="navigation">
-			        <div class="container-fluid">		          
-			          <div class="navbar-collapse collapse">
-			            <ul class="nav navbar-nav">
-			              <li><a href="index.php">Accueil</a></li>
-			              <li><a href="planning.php">Planning</a></li>
-			              <li><a href="equipes.php">Equipes</a></li>
-			              <li><a href="leClub.php">Le Club</a></li>
-			              <li class="dropdown">
-			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
-			                <ul class="dropdown-menu">
-			                  <li><a href="Liens-Docs/parents-relais.php">Parents-Relais</a></li>
-			                  <li><a href="Liens-Docs/link.php">Liens</a></li>
-			                  <li><a href="Liens-Docs/rules.php">Réglements</a></li>
-			                </ul>
-			              </li>
-			              <li class="active"><a href="sponsors.php">Sponsors</a></li>
-			            </ul>
-			          </div><!--/.nav-collapse -->
-			        </div><!--/.container-fluid -->
-			      </div>
+				        <div class="container-fluid">		          
+				          <div class="navbar-collapse collapse">
+				            <ul class="nav navbar-nav">
+				              <li><a href="index.php">Accueil</a></li>
+				              <li><a href="planning.php">Planning</a></li>
+				              <li><a href="equipes.php">Equipes</a></li>
+				              <li><a href="leClub.php">Le Club</a></li>
+				              <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
+				                <ul class="dropdown-menu">
+				                  <li><a href="Liens-Docs/parents-relais.php">Parents-Relais</a></li>
+				                  <li><a href="Liens-Docs/link.php">Liens</a></li>
+				                  <li><a href="Liens-Docs/rules.php">Réglements</a></li>
+				                </ul>
+				              </li>
+				              <li><a href="sponsors.php">Sponsors</a></li>
+				            </ul>
+				          </div><!--/.nav-collapse -->
+				        </div><!--/.container-fluid -->
+			     	</div>
 				<!--HEADER ET NAVBAR -->
 
-				<div class="alert alert-sucess alert-dismissable">
-				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
-				</div>
 
-
+				<!--FOOTER -->
 				<footer>
 		        	<div class="col-xs-3 col-sm-3 col-md-3">
 						<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
@@ -132,7 +120,8 @@
 						  <a href="mailto:arnaud.plassier@gmail.com">arnaud.plassier@gmail.com</a><br>
 						</address>
 					</div>
-		    </footer>
+		    	</footer>
+		    <!--FOOTER -->
 
 
 			</div>

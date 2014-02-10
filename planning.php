@@ -14,7 +14,13 @@
 
 	<title>Planning - Vertou Basket</title>
 </head>
-<body>
+<body onload="onload();">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".dropdown-toggle").dropdown();
+		});  
+	</script>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1"></div>
@@ -83,6 +89,11 @@
 				        </div><!--/.container-fluid -->
 			     	</div>
 				<!--HEADER ET NAVBAR -->
+
+				<div class="alert alert-sucess alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+				</div>
 
 
 				<!-- Nav tabs -->
@@ -802,7 +813,7 @@
 				</div>
 
 
-
+			<!--FOOTER -->
 				<footer>
 		        	<div class="col-xs-3 col-sm-3 col-md-3">
 						<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
@@ -831,7 +842,8 @@
 						  <a href="mailto:arnaud.plassier@gmail.com">arnaud.plassier@gmail.com</a><br>
 						</address>
 					</div>
-		    </footer>
+		    	</footer>
+		    <!--FOOTER -->
 
 
 			</div>

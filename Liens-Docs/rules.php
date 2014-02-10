@@ -98,6 +98,11 @@
 			      </div>
 				<!--HEADER ET NAVBAR -->
 
+				<div class="alert alert-sucess alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>MAJ</strong> : Date de maj : <a href="../maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+				</div>
+
 
 				<footer>
 		        	<div class="col-xs-3 col-sm-3 col-md-3">

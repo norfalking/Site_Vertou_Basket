@@ -97,6 +97,13 @@
 			        </div><!--/.container-fluid -->
 			      </div>
 				<!--HEADER ET NAVBAR -->
+				
+				<div class="alert alert-sucess alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+				</div>
+
+
 
 				<h2>Secteur Féminin</h2>
 				<div class="panel-group" id="accordion">
