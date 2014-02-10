@@ -20,7 +20,7 @@
 	</script>
 
 
-	<title>Vertou Basket - Accueil</title>
+	<title>Accueil - Vertou Basket</title>
 </head>
 <body onload="onload();">
 	<script type="text/javascript">
@@ -34,69 +34,69 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<!--HEADER ET NAVBAR -->
-				<header>
-					<div class="col-md-3">
-						<img class="center-block" src="img/logo_petit.gif" alt="Logo Vertou Basket">
-					</div>
-					<div class="col-md-6 text-center">
-						<h1>Vertou Basket</h1>
-					</div>
-					<div class='col-md-3 pull-right'>
-						<?php
-						if(isset($_SESSION['login'])) {
-							echo ("
-								<form class='form-horizontal' role='form' action='php/deconnexion.php'>
-								  <div class='form-group input-sm'>
-								  	<div class='col-md-3'></div>
-								    <div class='col-md-9'>
-								    	<button type='submit' class='btn btn-default btn-xs center-block'>Déconnexion</button>
-								    </div>
-								  </div>
-								</form>
-							");
-						}
-						else {
-							echo ("
-								<form class='form-horizontal' role='form' action='php/authentification.php' method='POST'>
-								  <div class='form-group input-sm'>
-								  	<div class='col-md-3'></div>
-								    <div class='col-md-9'>
-								    	<label for='inputLogin' class='col-sm-2 control-label'></label>
-								      	<input type='text' class='form-control input-sm' id='inputLogin' placeholder='Login' name='login'>
-								      	<label for='inputPassword' class='col-sm-2 control-label'></label>
-								      	<input type='password' class='form-control input-sm' id='inputPassword' placeholder='Password' name='password'>
-								      	<button type='submit' class='btn btn-default btn-xs center-block'>Sign in</button>
-								    </div>
-								  </div>
-								</form>
-							");
-						}
-						?>
-					</div>
-				</header>
-		
-				<div class="navbar navbar-inverse" role="navigation">
-		        <div class="container-fluid">		          
-		          <div class="navbar-collapse collapse">
-		            <ul class="nav navbar-nav">
-		              <li class="active"><a href="index.php">Accueil</a></li>
-		              <li><a href="planning.php">Planning</a></li>
-		              <li><a href="equipes.php">Equipes</a></li>
-		              <li><a href="leClub.php">Le Club</a></li>
-		              <li class="dropdown">
-		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
-		                <ul class="dropdown-menu">
-		                  <li><a href="Liens-Docs/parents-relais.php">Parents-Relais</a></li>
-		                  <li><a href="Liens-Docs/link.php">Liens</a></li>
-		                  <li><a href="Liens-Docs/rules.php">Réglements</a></li>
-		                </ul>
-		              </li>
-		              <li><a href="sponsors.php">Sponsors</a></li>
-		            </ul>
-		          </div><!--/.nav-collapse -->
-		        </div><!--/.container-fluid -->
-		      </div>
-			<!--HEADER ET NAVBAR -->
+					<header>
+						<div class="col-md-3">
+							<img class="center-block" src="img/logo_petit.gif" alt="Logo Vertou Basket">
+						</div>
+						<div class="col-md-6 text-center">
+							<h1>Vertou Basket</h1>
+						</div>
+						<div class='col-md-3 pull-right'>
+							<?php
+							if(isset($_SESSION['login'])) {
+								echo ("
+									<form class='form-horizontal' role='form' action='php/deconnexion.php'>
+									  <div class='form-group input-sm'>
+									  	<div class='col-md-3'></div>
+									    <div class='col-md-9'>
+									    	<button type='submit' class='btn btn-default btn-xs center-block'>Déconnexion</button>
+									    </div>
+									  </div>
+									</form>
+								");
+							}
+							else {
+								echo ("
+									<form class='form-horizontal' role='form' action='php/authentification.php' method='POST'>
+									  <div class='form-group input-sm'>
+									  	<div class='col-md-3'></div>
+									    <div class='col-md-9'>
+									    	<label for='inputLogin' class='col-sm-2 control-label'></label>
+									      	<input type='text' class='form-control input-sm' id='inputLogin' placeholder='Login' name='login'>
+									      	<label for='inputPassword' class='col-sm-2 control-label'></label>
+									      	<input type='password' class='form-control input-sm' id='inputPassword' placeholder='Password' name='password'>
+									      	<button type='submit' class='btn btn-default btn-xs center-block form-header'>Sign in</button>
+									    </div>
+									  </div>
+									</form>
+								");
+							}
+							?>
+						</div>
+					</header>
+			
+					<div class="navbar navbar-inverse" role="navigation">
+			        <div class="container-fluid">		          
+			          <div class="navbar-collapse collapse">
+			            <ul class="nav navbar-nav">
+			              <li class="active"><a href="index.php">Accueil</a></li>
+			              <li><a href="planning.php">Planning</a></li>
+			              <li><a href="equipes.php">Equipes</a></li>
+			              <li><a href="leClub.php">Le Club</a></li>
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+			                  <li><a href="Liens-Docs/parents-relais.php">Parents-Relais</a></li>
+			                  <li><a href="Liens-Docs/link.php">Liens</a></li>
+			                  <li><a href="Liens-Docs/rules.php">Réglements</a></li>
+			                </ul>
+			              </li>
+			              <li><a href="sponsors.php">Sponsors</a></li>
+			            </ul>
+			          </div><!--/.nav-collapse -->
+			        </div><!--/.container-fluid -->
+			      </div>
+				<!--HEADER ET NAVBAR -->
 
 
 		      <div id="Slider" class="carousel slide">
@@ -133,11 +133,39 @@
 			});  
 			</script>
 			
-			<h3>Résultats du week-end :</h3>
+			<footer>
+		        	<div class="col-xs-3 col-sm-3 col-md-3">
+						<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3">
+						<address>
+						  <strong>VERTOU BASKET</strong><br>
+						  4 ter Rue Alexandre Arnaud<br>
+						  44120 Vertou, France<br>
+						  <abbr title="Phone">P:</abbr> 0606458075
+						</address>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3">
+						<address>
+						  <strong>Gymnase des Echalonnières</strong><br>
+						  20 Boulevard Luc Dejoie<br>
+						  44120 Vertou, France<br>
+						  <abbr title="Phone">P:</abbr> 0606458075
+						</address>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 contact">
+						<address>
+						  <strong>Baptiste MARTIN</strong><br>
+						  <a href="mailto:martin_baptiste@ymail.com">martin_baptiste@ymail.com</a><br>
+						  <strong>Arnaud PLASSIER</strong><br>
+						  <a href="mailto:arnaud.plassier@gmail.com">arnaud.plassier@gmail.com</a><br>
+						</address>
+					</div>
+		    </footer>
 
 
 			</div>
-			<div class="col-md-1"></div>
+			<div class="col-xs-1 col-sm-1 col-md-1"></div>
 		</div>
 
 

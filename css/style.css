@@ -7,7 +7,6 @@ header{
 	background: green;
 	width: 100%;
 	height: 120px;
-	border-radius: 5px;
 	display: block;
 }
 header>div>h1{
@@ -19,7 +18,26 @@ header>div>h1{
 header>div>img{
 	margin-top: 20px;
 }
+.radius {
+	border-radius: -4px -4px 0 0;
+}
 
 .form-header{
 	margin-top: 5px;
+}
+
+footer{
+	color :#FFF;
+	background: green;
+	width: 100%;
+	height: 120px;
+	border-radius: 5px 5px 0 0;
+}
+footer>div>img {
+	margin-top: 20px;
+}
+footer>div>address{
+	margin-top: 15px;
+	text-align: center;
+	
 }
