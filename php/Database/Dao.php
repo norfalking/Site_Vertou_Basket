@@ -2,10 +2,14 @@
 
 require_once("ConnexionException.php");
 require_once("AccesTableException.php");
+require_once("Adherent.php");
+require_once("Match.php");
+require_once("Equipe.php");
 
 
-class Dao
-{  
+
+class Dao {  
+
   private $host;
   private $database;
   private $user;
@@ -35,114 +39,59 @@ class Dao
 		}
   }
 
+  public function deconnexion(){
+    $this->connexion = null;
+  }
 
 
-/*
-  Equipes
-*/
+
+// Equipes
+
   public function getJoueurs($equipe) {
     try {
-      $this->connexion();
-      $res = $this->connexion->query("SELECT licence, nom, prenom, telephone, mail FROM adherents, equipes WHERE equipe = '".$equipe."' and id = '".$equipe."'")->fetch(PDO::FETCH_ASSOC)['entraineur'];
+            $query = $this->connexion->query("SELECT licence, nom, prenom, telephone, mail, photo, role, equipe FROM adherents, equipes WHERE equipe = '".$equipe."' and id = '".$equipe."'");
+      $ret = array();
+      foreach ($query as $row) {
+        $ret[] = new Adherent($row['licence'], $row['nom'], $row['prenom'], $row['telephone'], $row['mail'], $row['photo'], $row['role'], $row['equipe']);
+      }
       $this->deconnexion();
     }
     catch (PDOException $e) {
       throw new AccesTableException();
     }
-    return $res;
+    return $ret;
   }
 
   public function getEntraineur($equipe) {
     try {
       $this->connexion();
-      $res = $this->connexion->query("SELECT * FROM equipes WHERE id = '".$equipe."'")->fetch(PDO::FETCH_ASSOC)['entraineur'];
+      $query = $this->connexion->query("SELECT licence, nom, prenom, telephone, mail, photo, role, equipe FROM adherents, equipes WHERE id = '".$equipe."'");
       $this->deconnexion();
     }
     catch (PDOException $e) {
       throw new AccesTableException();
     }
-    return $res;
+    return new Adherent($query['licence'], $query['nom'], $query['prenom'], $query['telephone'], $query['mail'], $query['photo'], $query['role'], $query['equipe']);;
   }
 
-  public function getPhoto($equipe) {
+  public function getPhotoEquipe($equipe) {
     try {
       $this->connexion();
-      $res = $this->connexion->query("SELECT * FROM equipes WHERE id = '".$equipe."'")->fetch(PDO::FETCH_ASSOC)['photo'];
+      $query = $this->connexion->query("SELECT photo FROM equipes WHERE id = '".$equipe."'");
       $this->deconnexion();
     }
     catch (PDOException $e) {
       throw new AccesTableException();
     }
-    return $res;
+    return $query;
   }
 
 
 
-  public function getRights($login) {
-    try {
-      $this->connexion();
-      $res = $this->connexion->query("SELECT * FROM users WHERE login = '".$login."'")->fetch(PDO::FETCH_ASSOC)['rights'];
-      $this->deconnexion();
-    }
-    catch (PDOException $e) {
-      throw new AccesTableException();
-    }
-    return $res;
-  }
+// Matchs
 
-  public function getImg($login) {
-    try {
-      $this->connexion();
-      $res = $this->connexion->query("SELECT * FROM users WHERE login = '".$login."'")->fetch(PDO::FETCH_ASSOC)['img'];
-      $this->deconnexion();
-    }
-    catch (PDOException $e) {
-      throw new AccesTableException();
-    }
-    return $res;
-  }
+  public function getMatchs() {
 
-  public function getUsers() {
-    try {
-      $this->connexion();
-      $res = $this->connexion->query("SELECT login FROM users");
-      $this->deconnexion();
-    }
-    catch (PDOException $e) {
-      throw new AccesTableException();
-    }
-    return $res;
-  }
-
-  public function addUser($login, $password) {
-    try {
-      $this->connexion();
-      $this->connexion->prepare("INSERT INTO users(login,password) VALUES (:login,:password)")->execute(array('login' => $login, 'password' => sha1($password)));
-      $this->deconnexion();
-    }
-    catch (PDOException $e) {
-      throw new AccesTableException();
-    }
-  }
-
-  public function deconnexion(){
-  	$this->connexion = null;
- 	}
-
-  public function verifyPassword($login, $password) {
-    try {
-      $this->connexion();
-      $res = $this->connexion->query("SELECT * FROM users WHERE adherent = '".$login."'")->fetch(PDO::FETCH_ASSOC)['mdp'];
-      $this->deconnexion();
-    }
-    catch (PDOException $e) {
-      throw new AccesTableException();
-    }
-    return (sha1($password) == $res);
-  }
-	
-  public function getConnexion(){
-    return $this->connexion;
   }
 
 }
