@@ -5,12 +5,12 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 
-	<script src="../js/jquery.js"></script>
-	<script src="../js/bootstrap.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		function onload() {
 			if (<?php echo (isset($_GET['fail'])); ?>) {
@@ -20,7 +20,7 @@
 	</script>
 
 
-	<title>Règlements - Vertou Basket</title>
+	<title>MAJ - Vertou Basket</title>
 </head>
 <body onload="onload();">
 	<script type="text/javascript">
@@ -37,7 +37,7 @@
 				<div class="col-md-10">
 					<header>
 						<div class="col-md-3">
-							<img class="center-block" src="../img/logo_petit.gif" alt="Logo Vertou Basket">
+							<img class="center-block" src="img/logo_petit.gif" alt="Logo Vertou Basket">
 						</div>
 						<div class="col-md-6 text-center">
 							<h1>Vertou Basket</h1>
@@ -88,19 +88,19 @@
 				        <div class="container-fluid">		          
 				          <div class="navbar-collapse collapse">
 				            <ul class="nav navbar-nav">
-				              <li><a href="../index.php">Accueil</a></li>
-				              <li><a href="p../lanning.php">Planning</a></li>
-				              <li><a href="../equipes.php">Equipes</a></li>
-				              <li><a href="../leClub.php">Le Club</a></li>
-				              <li class="dropdown active">
+				              <li><a href="index.php">Accueil</a></li>
+				              <li><a href="planning.php">Planning</a></li>
+				              <li><a href="equipes.php">Equipes</a></li>
+				              <li><a href="leClub.php">Le Club</a></li>
+				              <li class="dropdown">
 				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
 				                <ul class="dropdown-menu">
-				                  <li><a href="parents-relais.php">Parents-Relais</a></li>
-				                  <li><a href="link.php">Liens</a></li>
-				                  <li class="active"><a href="rules.php">Réglements</a></li>
+				                  <li><a href="Liens-Docs/parents-relais.php">Parents-Relais</a></li>
+				                  <li><a href="Liens-Docs/link.php">Liens</a></li>
+				                  <li><a href="Liens-Docs/rules.php">Réglements</a></li>
 				                </ul>
 				              </li>
-				              <li><a href="../sponsors.php">Sponsors</a></li>
+				              <li><a href="sponsors.php">Sponsors</a></li>
 				            </ul>
 				          </div>
 				        </div>
@@ -110,70 +110,11 @@
 			</div>
 		<!--NAVBAR -->
 
-		<!-- MAJ -->
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<div class="alert alert-sucess alert-dismissable">
-					  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					  <strong>MAJ</strong> : Date de maj : <a href="../maj.php" class="alert-link">Listes de toutes les mises à jours</a>
-					</div>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-		<!-- MAJ -->
-
 		<!-- CONTENU -->
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
-					<h3>Résultats du week-end :</h3>
-					
-					<div class="col-md-4">
-						<div class="panel panel-default">
-						 	<!-- Default panel contents -->
-							<div class="panel-heading text-center">Panel heading</div>
-							<div class="panel-body">
-								<p>Contenu de mon panel </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="panel panel-default">
-						 	<!-- Default panel contents -->
-							<div class="panel-heading text-center">Panel heading</div>
-							<div class="panel-body">
-								<p>Contenu de mon panel </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="panel panel-default">
-						 	<!-- Default panel contents -->
-							<div class="panel-heading text-center">Panel heading</div>
-							<div class="panel-body">
-								<p>Contenu de mon panel </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="panel panel-default">
-						 	<!-- Default panel contents -->
-							<div class="panel-heading text-center">Panel heading</div>
-							<div class="panel-body">
-								<p>Contenu de mon panel </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="panel panel-default">
-						 	<!-- Default panel contents -->
-							<div class="panel-heading text-center">Panel heading</div>
-							<div class="panel-body">
-								<p>Contenu de mon panel </p>
-							</div>
-						</div>
-					</div>
+					<h2>LISTE DES MISES A JOUR EFFECTUEES</h2>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -185,7 +126,7 @@
 				<div class="col-md-10">
 					<footer>
 						<div class="col-xs-3 col-sm-3 col-md-3">
-							<img class="center-block text-center" src="../img/logo_petit.gif" alt="Logo Vertou Basket">
+							<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
 						</div>
 						<div class="col-xs-3 col-sm-3 col-md-3">
 							<address>
