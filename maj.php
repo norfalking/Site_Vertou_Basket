@@ -11,8 +11,16 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function onload() {
+			if (<?php echo (isset($_GET['fail'])); ?>) {
+				alert("Le login ou le mot de passe est incorrect !");
+			}
+		}
+	</script>
 
-	<title>Mises à Jour - Vertou Basket</title>
+
+	<title>MAJ - Vertou Basket</title>
 </head>
 <body onload="onload();">
 	<script type="text/javascript">
@@ -20,12 +28,13 @@
 			$(".dropdown-toggle").dropdown();
 		});  
 	</script>
-	
+
 	<div class="container">
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">
-				<!--HEADER ET NAVBAR -->
+		
+		<!-- HEADER -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
 					<header>
 						<div class="col-md-3">
 							<img class="center-block" src="img/logo_petit.gif" alt="Logo Vertou Basket">
@@ -66,7 +75,15 @@
 							?>
 						</div>
 					</header>
-		
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- HEADER -->
+
+		<!--NAVBAR -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
 					<div class="navbar navbar-inverse" role="navigation">
 				        <div class="container-fluid">		          
 				          <div class="navbar-collapse collapse">
@@ -85,51 +102,62 @@
 				              </li>
 				              <li><a href="sponsors.php">Sponsors</a></li>
 				            </ul>
-				          </div><!--/.nav-collapse -->
-				        </div><!--/.container-fluid -->
-			     	</div>
-				<!--HEADER ET NAVBAR -->
-
-
-				<!--FOOTER -->
-				<footer>
-		        	<div class="col-xs-3 col-sm-3 col-md-3">
-						<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3">
-						<address>
-						  <strong>VERTOU BASKET</strong><br>
-						  4 ter Rue Alexandre Arnaud<br>
-						  44120 Vertou, France<br>
-						  <abbr title="Phone">P:</abbr> 0606458075
-						</address>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3">
-						<address>
-						  <strong>Gymnase des Echalonnières</strong><br>
-						  20 Boulevard Luc Dejoie<br>
-						  44120 Vertou, France<br>
-						  <abbr title="Phone">P:</abbr> 0606458075
-						</address>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3 contact">
-						<address>
-						  <strong>Baptiste MARTIN</strong><br>
-						  <a href="mailto:martin_baptiste@ymail.com">martin_baptiste@ymail.com</a><br>
-						  <strong>Arnaud PLASSIER</strong><br>
-						  <a href="mailto:arnaud.plassier@gmail.com">arnaud.plassier@gmail.com</a><br>
-						</address>
-					</div>
-		    	</footer>
-		    <!--FOOTER -->
-
-
+				          </div>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-1"></div>
 			</div>
-			<div class="col-xs-1 col-sm-1 col-md-1"></div>
-		</div>
+		<!--NAVBAR -->
 
+		<!-- CONTENU -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h2>LISTE DES MISES A JOUR EFFECTUEES</h2>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- CONTENU -->
 
+		<!-- FOOTER -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<footer>
+						<div class="col-xs-3 col-sm-3 col-md-3">
+							<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3">
+							<address>
+							  <strong>VERTOU BASKET</strong><br>
+							  4 ter Rue Alexandre Arnaud<br>
+							  44120 Vertou, France<br>
+							  <abbr title="Phone">P:</abbr> 0606458075
+							</address>
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3">
+							<address>
+							  <strong>Gymnase des Echalonnières</strong><br>
+							  20 Boulevard Luc Dejoie<br>
+							  44120 Vertou, France<br>
+							  <abbr title="Phone">P:</abbr> 0606458075
+							</address>
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 contact">
+							<address>
+							  <strong>Baptiste MARTIN</strong><br>
+							  <a href="mailto:martin_baptiste@ymail.com">martin_baptiste@ymail.com</a><br>
+							  <strong>Arnaud PLASSIER</strong><br>
+							  <a href="mailto:arnaud.plassier@gmail.com">arnaud.plassier@gmail.com</a><br>
+							</address>
+						</div>
+					</footer>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- FOOTER -->
 
-	</div>	
+	</div>
 </body>
 </html>
