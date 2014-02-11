@@ -79,10 +79,42 @@
 							?>
 						</div>
 					</header>
+<<<<<<< HEAD
 				</div>
 				<div class="col-md-1"></div>
 			</div>
 		<!-- HEADER -->
+=======
+			
+					<div class="navbar navbar-inverse" role="navigation">
+			        <div class="container-fluid">		          
+			          <div class="navbar-collapse collapse">
+			            <ul class="nav navbar-nav">
+			              <li class="active"><a href="index.php">Accueil</a></li>
+			              <li><a href="planning.php">Planning</a></li>
+			              <li><a href="equipes.php">Equipes</a></li>
+			              <li><a href="leClub.php">Le Club</a></li>
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+			                  <li><a href="Liens-Docs/parents-relais.php">Parents-Relais</a></li>
+			                  <li><a href="Liens-Docs/link.php">Liens</a></li>
+			                  <li><a href="Liens-Docs/rules.php">Réglements</a></li>
+			                </ul>
+			              </li>
+			              <li><a href="sponsors.php">Sponsors</a></li>
+			            </ul>
+			          </div><!--/.nav-collapse -->
+			        </div><!--/.container-fluid -->
+			      </div>
+				<!--HEADER ET NAVBAR -->
+
+				<div class="alert alert-sucess alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+				</div>
+
+>>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
 
 		<!--NAVBAR -->
 			<div class="row">
