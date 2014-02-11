@@ -113,6 +113,7 @@
 				<div class="col-md-1"></div>
 			</div>
 		<!--NAVBAR -->
+<<<<<<< HEAD
 
 		<!-- MAJ -->
 			<div class="row">
@@ -138,6 +139,33 @@
 					  <li><a href="#messages" data-toggle="tab">Week End +14</a></li>
 					</ul>
 
+=======
+		
+		<!-- MAJ -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="alert alert-sucess alert-dismissable">
+					  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- MAJ -->
+
+		<!-- CONTENU -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+					  <li class="active"><a href="#bureau" data-toggle="tab">Bureau</a></li>
+					  <li><a href="#directeur" data-toggle="tab">COmité Directeur</a></li>
+					  <li><a href="#messages" data-toggle="tab">Week End +14</a></li>
+					</ul>
+
+>>>>>>> c835f21306189350369f61ac339999d236aadcbd
 					<!-- Tab panes -->
 					<div class="tab-content">
 						<div class="tab-pane active" id="bureau">

@@ -83,7 +83,11 @@
 				<div class="col-md-1"></div>
 			</div>
 		<!-- HEADER -->
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> c835f21306189350369f61ac339999d236aadcbd
 		<!--NAVBAR -->
 			<div class="row">
 				<div class="col-md-1"></div>
@@ -109,6 +113,7 @@
 				          </div>
 				        </div>
 				    </div>
+<<<<<<< HEAD
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -244,6 +249,94 @@
 				</div>
 				<div class="col-md-1"></div>
 			</div>
+=======
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!--NAVBAR -->
+
+		<!-- MAJ -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="alert alert-sucess alert-dismissable">
+					  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- MAJ -->
+
+		<!-- SLIDER -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div id="Slider" class="carousel slide">
+				        <div class="carousel-inner thumbnail">
+				          <div class="item active"> <img alt="" src="img/1.jpg"/>
+				            <div class="carousel-caption">
+				              <p>Une présentation</p>
+				            </div>
+				          </div>
+				          <div class="item"> <img alt="" src="img/2.jpg"/>
+				            <div class="carousel-caption">
+				              <p>Un autre présentation</p>
+				            </div>
+				          </div>
+				          <div class="item"> <img alt="" src="img/3.jpg"/>
+				            <div class="carousel-caption">
+				              <p>Et encore une autre !</p>
+				            </div>
+				          </div>
+				        </div>
+				        <a class="left carousel-control" href="#Slider" data-slide="prev">
+					    	<span class="glyphicon glyphicon-chevron-left"></span>
+					  	</a>
+					  	<a class="right carousel-control" href="#Slider" data-slide="next">
+					    	<span class="glyphicon glyphicon-chevron-right"></span>
+					  	</a>
+				    </div>
+				
+					<script>
+						$(function (){
+						    $('.carousel').carousel({
+							interval: 7500	
+						    });
+						});
+					</script>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- SLIDER -->
+
+		<!-- CONTENU -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h3>Résultats du week-end :</h3>
+
+					<?php 
+						$dao = new Dao("localhost", "vertou_basket_bdd", "root", "");
+						$matchs = $dao->getMatchs();
+						foreach ($matchs as $row) {
+							echo ("
+								<div class='col-md-4'>
+									<div class='panel panel-default'>
+										<div class='panel-heading text-center'>".$row->getEquipe()." (".$row->getCategorie().") - ".$dao->getNiveau($row->getEquipe())."</div>
+										<div class='panel-body text-center'>
+											<h5>Vertou - ".$row->getAdversaire()."</h5>
+											<h5><span style='color: red;'>".$row->getScore_equipe()."</span> - ".$row->getScore_adversaire()."</h5>
+										</div>
+									</div>
+								</div>
+							");
+						}
+					?>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+>>>>>>> c835f21306189350369f61ac339999d236aadcbd
 		<!-- CONTENU -->
 
 		<!-- FOOTER -->

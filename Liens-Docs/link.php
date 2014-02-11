@@ -79,6 +79,34 @@
 				<div class="col-md-1"></div>
 			</div>
 		<!-- HEADER -->
+<<<<<<< HEAD
+
+		<!--NAVBAR -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="navbar navbar-inverse" role="navigation">
+				        <div class="container-fluid">		          
+				          <div class="navbar-collapse collapse">
+				            <ul class="nav navbar-nav">
+				              <li><a href="../index.php">Accueil</a></li>
+				              <li><a href="p../lanning.php">Planning</a></li>
+				              <li><a href="../equipes.php">Equipes</a></li>
+				              <li><a href="../leClub.php">Le Club</a></li>
+				              <li class="dropdown active">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens/Docs <b class="caret"></b></a>
+				                <ul class="dropdown-menu">
+				                  <li><a href="parents-relais.php">Parents-Relais</a></li>
+				                  <li class="active"><a href="link.php">Liens</a></li>
+				                  <li><a href="rules.php">Réglements</a></li>
+				                </ul>
+				              </li>
+				              <li><a href="../sponsors.php">Sponsors</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				    </div>
+=======
 
 		<!--NAVBAR -->
 			<div class="row">
@@ -110,6 +138,7 @@
 			</div>
 		<!--NAVBAR -->
 
+<<<<<<< HEAD
 		<!-- MAJ -->
 			<div class="row">
 				<div class="col-md-1"></div>
@@ -122,6 +151,32 @@
 				<div class="col-md-1"></div>
 			</div>
 		<!-- MAJ -->
+=======
+				<div class="alert alert-sucess alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>MAJ</strong> : Date de maj : <a href="../maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+>>>>>>> c835f21306189350369f61ac339999d236aadcbd
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!--NAVBAR -->
+
+<<<<<<< HEAD
+		<!-- MAJ -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="alert alert-sucess alert-dismissable">
+					  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					  <strong>MAJ</strong> : Date de maj : <a href="../maj.php" class="alert-link">Listes de toutes les mises à jours</a>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		<!-- MAJ -->
+=======
+>>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
+>>>>>>> c835f21306189350369f61ac339999d236aadcbd
 
 		<!-- CONTENU -->
 			<div class="row">

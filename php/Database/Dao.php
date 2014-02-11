@@ -96,7 +96,7 @@ class Dao {
       $query = $this->connexion->query("SELECT * FROM matchs");
       $ret = array();
       foreach ($query as $row) {
-        $ret[] = new Match($row['id'], $row['date'], $row['categorie'], $row['equipe'], $row['adversaire']);
+        $ret[] = new Match($row['id'], $row['date'], $row['categorie'], $row['equipe'], $row['adversaire'], $row['score_equipe'], $row['score_adversaire'], $row['lieu']);
       }
       $this->deconnexion();
     }
@@ -104,6 +104,32 @@ class Dao {
       throw new AccesTableException();
     }
     return $ret;
+  }
+
+  public function getNiveau($equipe) {
+    try {
+      $this->connexion();
+      $query = $this->connexion->query("SELECT * FROM equipes, matchs WHERE nom = '".$equipe."' and equipe = '".$equipe."'")->fetch(PDO::FETCH_ASSOC)['niveau'];;
+      $this->deconnexion();
+    }
+    catch (PDOException $e) {
+      throw new AccesTableException();
+    }
+    return $query;
+  }
+
+
+
+  public function verifyPassword($login, $password) {
+    try {
+      $this->connexion();
+      $res = $this->connexion->query("SELECT * FROM users WHERE adherent = '".$login."'")->fetch(PDO::FETCH_ASSOC)['password'];
+      $this->deconnexion();
+    }
+    catch (PDOException $e) {
+      throw new AccesTableException();
+    }
+    return (sha1($password) == $res);
   }
 
 }

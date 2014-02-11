@@ -18,9 +18,13 @@
 			}
 		}
 	</script>
+<<<<<<< HEAD
 
 
 	<title>MAJ - Vertou Basket</title>
+=======
+	<title>Mises à Jour - Vertou Basket</title>
+>>>>>>> c835f21306189350369f61ac339999d236aadcbd
 </head>
 <body onload="onload();">
 	<script type="text/javascript">
