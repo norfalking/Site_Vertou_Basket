@@ -11,7 +11,6 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-<<<<<<< HEAD
 	<script type="text/javascript">
 		function onload() {
 			if (<?php echo (isset($_GET['fail'])); ?>) {
@@ -19,13 +18,7 @@
 			}
 		}
 	</script>
-
-
-	<title>MAJ - Vertou Basket</title>
-=======
-
 	<title>Mises à Jour - Vertou Basket</title>
->>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
 </head>
 <body onload="onload();">
 	<script type="text/javascript">
@@ -33,7 +26,6 @@
 			$(".dropdown-toggle").dropdown();
 		});  
 	</script>
-<<<<<<< HEAD
 
 	<div class="container">
 		
@@ -41,14 +33,6 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
-=======
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">
-				<!--HEADER ET NAVBAR -->
->>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
 					<header>
 						<div class="col-md-3">
 							<img class="center-block" src="img/logo_petit.gif" alt="Logo Vertou Basket">
@@ -89,7 +73,6 @@
 							?>
 						</div>
 					</header>
-<<<<<<< HEAD
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -99,9 +82,6 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
-=======
-		
->>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
 					<div class="navbar navbar-inverse" role="navigation">
 				        <div class="container-fluid">		          
 				          <div class="navbar-collapse collapse">
@@ -120,7 +100,6 @@
 				              </li>
 				              <li><a href="sponsors.php">Sponsors</a></li>
 				            </ul>
-<<<<<<< HEAD
 				          </div>
 				        </div>
 				    </div>
@@ -178,53 +157,5 @@
 		<!-- FOOTER -->
 
 	</div>
-=======
-				          </div><!--/.nav-collapse -->
-				        </div><!--/.container-fluid -->
-			     	</div>
-				<!--HEADER ET NAVBAR -->
-
-
-				<!--FOOTER -->
-				<footer>
-		        	<div class="col-xs-3 col-sm-3 col-md-3">
-						<img class="center-block text-center" src="img/logo_petit.gif" alt="Logo Vertou Basket">
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3">
-						<address>
-						  <strong>VERTOU BASKET</strong><br>
-						  4 ter Rue Alexandre Arnaud<br>
-						  44120 Vertou, France<br>
-						  <abbr title="Phone">P:</abbr> 0606458075
-						</address>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3">
-						<address>
-						  <strong>Gymnase des Echalonnières</strong><br>
-						  20 Boulevard Luc Dejoie<br>
-						  44120 Vertou, France<br>
-						  <abbr title="Phone">P:</abbr> 0606458075
-						</address>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3 contact">
-						<address>
-						  <strong>Baptiste MARTIN</strong><br>
-						  <a href="mailto:martin_baptiste@ymail.com">martin_baptiste@ymail.com</a><br>
-						  <strong>Arnaud PLASSIER</strong><br>
-						  <a href="mailto:arnaud.plassier@gmail.com">arnaud.plassier@gmail.com</a><br>
-						</address>
-					</div>
-		    	</footer>
-		    <!--FOOTER -->
-
-
-			</div>
-			<div class="col-xs-1 col-sm-1 col-md-1"></div>
-		</div>
-
-
-
-	</div>	
->>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
 </body>
 </html>

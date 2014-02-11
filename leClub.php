@@ -84,7 +84,6 @@
 			</div>
 		<!-- HEADER -->
 
-<<<<<<< HEAD
 		<!--NAVBAR -->
 			<div class="row">
 				<div class="col-md-1"></div>
@@ -114,33 +113,7 @@
 				<div class="col-md-1"></div>
 			</div>
 		<!--NAVBAR -->
-=======
-				<div class="alert alert-sucess alert-dismissable">
-				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
-				</div>
-
-
-
-				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-				  Popover on left
-				</button>
-
-				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-				  Popover on top
-				</button>
-
-				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-				sagittis lacus vel augue laoreet rutrum faucibus.">
-				  Popover on bottom
-				</button>
-
-				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-				  Popover on right
-				</button>
-
->>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
-
+		
 		<!-- MAJ -->
 			<div class="row">
 				<div class="col-md-1"></div>

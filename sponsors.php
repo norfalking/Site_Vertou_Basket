@@ -110,7 +110,6 @@
 			</div>
 		<!--NAVBAR -->
 
-<<<<<<< HEAD
 		<!-- MAJ -->
 			<div class="row">
 				<div class="col-md-1"></div>
@@ -123,13 +122,6 @@
 				<div class="col-md-1"></div>
 			</div>
 		<!-- MAJ -->
-=======
-				<div class="alert alert-sucess alert-dismissable">
-				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				  <strong>MAJ</strong> : Date de maj : <a href="maj.php" class="alert-link">Listes de toutes les mises à jours</a>
-				</div>
-
->>>>>>> eba469c1d0b5b3f28c792d651c1e1b5026b8e8b7
 
 		<!-- CONTENU -->
 			<div class="row">
